@@ -76,6 +76,19 @@ WHERE
 ORDER BY 
     officeCode;
 
+-- Select columns from a tables using the WHERE, NOT IN and ORDER BY clauses
+
+SELECT 
+    officeCode, 
+    city, 
+    phone
+FROM
+    offices
+WHERE
+    country NOT IN ('USA' , 'France')
+ORDER BY 
+    city;
+
 -- Select columns from a tables using the WHERE and IS NULL BY clauses
  
 SELECT 
@@ -118,3 +131,25 @@ WHERE
 ORDER BY 
     state, 
     city;
+
+-- Select with LIMIT example 1 - only 1 parameter indicates amout of rows
+
+SELECT 
+    customerNumber, 
+    customerName
+FROM
+    customers
+ORDER BY customerName    
+LIMIT 10;
+
+-- Select with LIMIT example 2 - 2 parameters 1) start index 2) amount of rows
+
+SELECT 
+    customerNumber, 
+    customerName
+FROM
+    customers
+ORDER BY customerName    
+LIMIT 10, 10;
+
+
