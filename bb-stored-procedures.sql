@@ -33,3 +33,5 @@ END$$
 DELIMITER ;
 
 CALL GetCustomers();
+
+DROP PROCEDURE IF EXISTS GetCustomers;
