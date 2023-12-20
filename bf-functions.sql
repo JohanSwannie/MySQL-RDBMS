@@ -20,14 +20,18 @@ INSERT INTO customers
 (customerName, contactName, address, city, postalCode, country)
 VALUES
 ('Alfreds Futterkiste',	'Maria Anders',	'Obere Str. 57', 'Berlin',	'12209', 'Germany'),
-('Ana Trujillo Emparedados y helados',	'Ana Trujillo',	'Avda. de la Constitución 2222',	'México D.F.',	'05021', 'Mexico'),
-('Bntonio Moreno Taquería',	'Antonio Moreno', 'Mataderos 2312',	'México D.F.',	'05023', 'Mexico');
+('Carla Trujillo Emparedados y helados',	'Carla Trujillo',	'Avda. de la Constitución 2222',	'México D.F.',	'05021', 'Mexico'),
+('Zorro Moreno Taquería',	'Antonio Moreno', 'Mataderos 2312',	'México D.F.',	'05023', 'Mexico');
 
--- *****************************************************************
--- ****                            ASC                          ****
--- ****             Return the ASCII value of the first         **** 
--- ****                 character in "CustomerName"             ****
--- *****************************************************************
+-- RETURN THE ASCII VALUE OF THE FIRST CHARACTER IN "CUSTOMERNAME"
 
 SELECT ASCII(CustomerName) AS NumCodeOfFirstChar
 FROM Customers;
+
+-- RETURN THE LENGTH OF THE STRING OR A COLUMN NAME
+
+SELECT CHAR_LENGTH("The man swim against the current of the big river") AS LengthOfString;
+
+SELECT CHAR_LENGTH(customerName) 
+AS length_of_customer_name
+FROM customers;
