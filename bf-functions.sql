@@ -35,3 +35,7 @@ SELECT CHAR_LENGTH("The man swim against the current of the big river") AS Lengt
 SELECT CHAR_LENGTH(customerName) 
 AS length_of_customer_name
 FROM customers;
+
+-- RETURN THE LAST INDEX OF THE FIRST MENTIONED CHARACTER
+
+SELECT FIELD("P", "W", "E", "P");
