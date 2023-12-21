@@ -89,3 +89,7 @@ SELECT MID('The school presents a play that will blow your mind', 12, 15);
 -- SELECT FOR 'K' IN STRING 'They switched on the kettle for a nice cup of coffee'
 
 SELECT POSITION("k" IN "They switched on the kettle for a nice cup of coffee");
+
+-- REPEAT A STRING 4 TIMES 
+
+SELECT REPEAT('The school will start at 8.30AM - ', 4);
