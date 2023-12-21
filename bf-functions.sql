@@ -64,4 +64,7 @@ SELECT LCASE("WHEN WILL THEY START LEARNING");
 
 SELECT LEFT("The big man walks up the steep mountain", 11);
 
+-- SELECT THE LENGTH OF THE STRING
+
+SELECT LENGTH("What will happen when we start doing the right things?");
 
