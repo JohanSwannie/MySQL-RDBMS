@@ -142,3 +142,6 @@ SELECT TRIM('      They want to go to the zoo tomorrow        ');
  
  SELECT UPPER('The pink elephant crosses the street');
  
+  -- RETURN THE ABSOLUTE VALUE OF A NUMBER
+ 
+ SELECT ABS(-1129.55);
