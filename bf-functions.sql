@@ -55,3 +55,8 @@ SELECT INSERT('yahooo.com', 1, 6, 'google');
 -- SEARCH FOR "knows" IN STRING "He absolutely knows the city", AND RETURN POSITION
 
 SELECT INSTR('He absolutely knows the city', 'knows');
+
+-- CONVERT THE TEXT TO LOWERCASE
+
+SELECT LCASE("WHEN WILL THEY START LEARNING");
+
