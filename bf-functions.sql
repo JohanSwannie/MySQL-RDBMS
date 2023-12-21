@@ -98,3 +98,6 @@ SELECT REPEAT('The school will start at 8.30AM - ', 4);
 
 SELECT REPLACE("Hamilton High School", "High", "Primary");
 
+-- REVERSE A STRING 
+
+SELECT REVERSE("He knew about the library books");
