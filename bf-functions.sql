@@ -81,3 +81,7 @@ SELECT LPAD('The big brown bear runs away', 40, 'XXX');
 -- REMOVE LEADING SPACES FROM A STRING 
 
 SELECT LTRIM('        The family is out for a picnic');
+
+-- EXTRACT A SUBSTRING FROM A STRING (START AT POSITION 12, EXTRACT 15 CHARACTERS)
+
+SELECT MID('The school presents a play that will blow your mind', 12, 15);
