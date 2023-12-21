@@ -101,3 +101,7 @@ SELECT REPLACE("Hamilton High School", "High", "Primary");
 -- REVERSE A STRING 
 
 SELECT REVERSE("He knew about the library books");
+
+-- EXTRACT 5 CHARACTERS FROM THE STRING START AT THE RIGHT HAND SIDE
+
+SELECT RIGHT('The man drives the car down the hill', 5);
