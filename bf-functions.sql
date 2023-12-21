@@ -140,3 +140,5 @@ SELECT TRIM('      They want to go to the zoo tomorrow        ');
  
  SELECT UCASE('The pink elephant crosses the street');
  
+ SELECT UPPER('The pink elephant crosses the street');
+ 
