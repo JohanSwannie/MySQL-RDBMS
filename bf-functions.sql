@@ -51,3 +51,7 @@ SELECT FORMAT(71889.9617, 2);
 -- INSERT THE STRING 'google' INTO FIRST STRING BY REPLACING THE FIRST 6 CHARACTERS
 
 SELECT INSERT('yahooo.com', 1, 6, 'google');
+
+-- SEARCH FOR "knows" IN STRING "He absolutely knows the city", AND RETURN POSITION
+
+SELECT INSTR('He absolutely knows the city', 'knows');
