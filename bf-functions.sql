@@ -74,3 +74,6 @@ SELECT LENGTH("What will happen when we start doing the right things?");
 
 SELECT LOCATE('z', 'They went to the zoo yesterday');
 
+-- LEFT PAD THE STRING WITH 'XXX' TO A TOTAL OF 40 CHARACTERS
+
+SELECT LPAD('The big brown bear runs away', 40, 'XXX');
