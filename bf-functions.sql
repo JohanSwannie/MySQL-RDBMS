@@ -122,3 +122,8 @@ select space(10);
 
 SELECT STRCMP('Hello to EVeryone', 'hello to everyone');
 
+-- EXTRACT A SUBSTRING, STARTING AT POSITION 13 FOR 18 CHARACTERS LONG
+
+SELECT SUBSTR('The longest train in the world is 345 meters in length', 13, 18);
+
+SELECT SUBSTRING('The longest train in the world is 345 meters in length', 13, 18);
