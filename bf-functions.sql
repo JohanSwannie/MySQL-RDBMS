@@ -127,3 +127,7 @@ SELECT STRCMP('Hello to EVeryone', 'hello to everyone');
 SELECT SUBSTR('The longest train in the world is 345 meters in length', 13, 18);
 
 SELECT SUBSTRING('The longest train in the world is 345 meters in length', 13, 18);
+
+-- RETURN A SUBSTRING OF A STRING BEFORE A SPECIFIED NUMBER OF DELIMITER OCCURS
+
+SELECT SUBSTRING_INDEX('www.thebesttools.ever.tobeused.forallkindsof.trades.com', '.', 3);
