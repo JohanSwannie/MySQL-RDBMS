@@ -97,3 +97,4 @@ SELECT REPEAT('The school will start at 8.30AM - ', 4);
 -- REPLACE PORTION OF A STRING WITH NEW SPECIFIED VALUE
 
 SELECT REPLACE("Hamilton High School", "High", "Primary");
+
