@@ -109,3 +109,7 @@ SELECT RIGHT('The man drives the car down the hill', 5);
 -- RIGHT PAD THE CHARACTERS 'XXX' TIMES AFTER STRING 'Happy new year' TO A TOTAL OF 25 CHARACTERS
 
 SELECT RPAD('Happy new year', 25 , 'XXX');
+
+-- REMOVE TRAILING SPACES FROM A STRING
+
+SELECT RTRIM('We are so happy about the outcome         ');
