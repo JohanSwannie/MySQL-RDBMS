@@ -117,3 +117,8 @@ SELECT RTRIM('We are so happy about the outcome         ');
 -- RETURNS THE GIVEN NUMBER OF BLANK SPACES
 
 select space(10);
+
+-- COMPARE 2 STRINGS - IF EQUAL RETURNS 0 ELSE RETURN -1 ---> Not case sensitive
+
+SELECT STRCMP('Hello to EVeryone', 'hello to everyone');
+
