@@ -68,3 +68,7 @@ SELECT LEFT("The big man walks up the steep mountain", 11);
 
 SELECT LENGTH("What will happen when we start doing the right things?");
 
+-- LOCATE 'z' IN THE STRING AND RETURN ITS POSITION
+
+SELECT LOCATE('z', 'They went to the zoo yesterday');
+
