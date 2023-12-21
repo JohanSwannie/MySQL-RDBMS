@@ -135,3 +135,8 @@ SELECT SUBSTRING_INDEX('www.thebesttools.ever.tobeused.forallkindsof.trades.com'
 -- REMOVE LEADING AND TRAILING SPACES FROM A STRING
 
 SELECT TRIM('      They want to go to the zoo tomorrow        ');
+
+-- CONVERT STRING TO UPPERCASE
+ 
+ SELECT UCASE('The pink elephant crosses the street');
+ 
