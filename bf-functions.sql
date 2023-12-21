@@ -60,3 +60,8 @@ SELECT INSTR('He absolutely knows the city', 'knows');
 
 SELECT LCASE("WHEN WILL THEY START LEARNING");
 
+-- SELECT 11 CHARACTERS FROM THE STRING STARTING FROM THE LEFT 
+
+SELECT LEFT("The big man walks up the steep mountain", 11);
+
+
