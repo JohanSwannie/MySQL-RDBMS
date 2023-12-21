@@ -113,3 +113,7 @@ SELECT RPAD('Happy new year', 25 , 'XXX');
 -- REMOVE TRAILING SPACES FROM A STRING
 
 SELECT RTRIM('We are so happy about the outcome         ');
+
+-- RETURNS THE GIVEN NUMBER OF BLANK SPACES
+
+select space(10);
