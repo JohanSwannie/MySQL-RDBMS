@@ -281,3 +281,37 @@ SELECT DATEDIFF("2023-12-22", "2022-11-21");
 -- ADD A NUMBER OF DAYS TOA DATE
 
 SELECT DATE_ADD("2023-12-01", INTERVAL 10 DAY);  
+
+-- RETURN THE DATE FORMAT SPECIFIED
+
+SELECT DATE_FORMAT("2023-12-18", "%a");  # Abbreviated weekday name (Sun to Sat)
+SELECT DATE_FORMAT("2023-12-18", "%b");  # Abbreviated month name (Jan to Dec)
+SELECT DATE_FORMAT("2023-12-18", "%c");  # Numeric month name (0 to 12)
+SELECT DATE_FORMAT("2023-12-18", "%d");  # Day of the month as a numeric value (01 to 31)
+SELECT DATE_FORMAT("2023-12-18", "%D");  # Day of the month as a numeric value, followed by suffix (1st, 2nd, 3rd, ...)
+SELECT DATE_FORMAT("2023-12-18", "%e");  # Day of the month as a numeric value (0 to 31)
+SELECT DATE_FORMAT("2023-12-18", "%f");  # Microseconds (000000 to 999999)
+SELECT DATE_FORMAT("2023-12-18", "%h");  # Hour (00 to 12)
+SELECT DATE_FORMAT("2023-12-18", "%H");  # Hour (00 to 23)
+SELECT DATE_FORMAT("2023-12-18", "%i");  # Minutes (00 to 59)
+SELECT DATE_FORMAT("2023-12-18", "%I");  # Hour (00 to 12)
+SELECT DATE_FORMAT("2023-12-18", "%j");  # Day of the year (001 to 366)
+SELECT DATE_FORMAT("2023-12-18", "%k");  # Hour (0 to 23)
+SELECT DATE_FORMAT("2023-12-18", "%l");  # Hour (1 to 12)
+SELECT DATE_FORMAT("2023-12-18", "%m");  # Month name as a numeric value (00 to 12)
+SELECT DATE_FORMAT("2023-12-18", "%M");  # Month name in full (January to December)
+SELECT DATE_FORMAT("2023-12-18", "%p");  # AM or PM
+SELECT DATE_FORMAT("2023-12-18", "%r");  # Time in 12 hour AM or PM format (hh:mm:ss AM/PM)
+SELECT DATE_FORMAT("2023-12-18", "%s");  # Seconds (00 to 59)
+SELECT DATE_FORMAT("2023-12-18", "%S");  # Seconds (00 to 59)
+SELECT DATE_FORMAT("2023-12-18", "%T");  # Time in 24 hour format (hh:mm:ss)
+SELECT DATE_FORMAT("2023-12-18", "%u");  # Week where Monday is the first day of the week (00 to 53)
+SELECT DATE_FORMAT("2023-12-18", "%U");  # Week where Sunday is the first day of the week (00 to 53)
+SELECT DATE_FORMAT("2023-12-18", "%v");  # Week where Monday is the first day of the week (01 to 53). Used with %x
+SELECT DATE_FORMAT("2023-12-18", "%V");  # Week where Sunday is the first day of the week (01 to 53). Used with %X
+SELECT DATE_FORMAT("2023-12-18", "%w");  # Day of the week where Sunday=0 and Saturday=6
+SELECT DATE_FORMAT("2023-12-18", "%W");  # Weekday name in full (Sunday to Saturday)
+SELECT DATE_FORMAT("2023-12-18", "%x");  # Year for the week where Monday is the first day of the week. Used with %v
+SELECT DATE_FORMAT("2023-12-18", "%X");  # Year for the week where Sunday is the first day of the week. Used with %V
+SELECT DATE_FORMAT("2023-12-18", "%y");  # Year as a numeric, 2-digit value
+SELECT DATE_FORMAT("2023-12-18", "%Y");  # Year as a numeric, 4-digit value
