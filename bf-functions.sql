@@ -170,3 +170,7 @@ SELECT ROUND(AVG(price), 2) as Average_Price from products;
 SELECT CEIL(38.27) AS number;
 
 SELECT CEILING(100.55) AS number;
+
+-- RETURN A COUNT AS THE AMOUNT OF OCCURENCES FOR A COLUMN
+
+SELECT COUNT(productName) AS NumberOfProducts FROM products;
