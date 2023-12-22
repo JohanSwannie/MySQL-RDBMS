@@ -489,3 +489,17 @@ SELECT YEAR("2023-12-23");
 -- RETURN THE YEAR AND WEEK NUMBER OF A DATE
 
 SELECT YEARWEEK('2023-12-23');
+
+-- RETURN THE BINARY OF A NUMBER 
+
+SELECT BIN(19);
+
+-- CONDITION CHECKING WITH CASE
+
+SELECT productName, price,
+CASE
+    WHEN price < 400 THEN "The price is smaller than 400" 
+    WHEN price < 500 THEN "The price is between 400 and 499" 
+    ELSE "The price is above 499"
+END as price_evaluation
+FROM products;
