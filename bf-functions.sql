@@ -315,3 +315,15 @@ SELECT DATE_FORMAT("2023-12-18", "%x");  # Year for the week where Monday is the
 SELECT DATE_FORMAT("2023-12-18", "%X");  # Year for the week where Sunday is the first day of the week. Used with %V
 SELECT DATE_FORMAT("2023-12-18", "%y");  # Year as a numeric, 2-digit value
 SELECT DATE_FORMAT("2023-12-18", "%Y");  # Year as a numeric, 4-digit value
+
+-- SUBTRACT 15 DAYS FROM A DATE AND RETURN THE DATE
+
+SELECT DATE_SUB('2023-12-22', INTERVAL 15 DAY);
+
+-- SUBTRACT 15 HOURS FROM A DATE AND RETURN THE DATE
+
+SELECT DATE_SUB('2023-12-22', INTERVAL 15 HOUR);
+
+-- SUBTRACT 15 MINUTES FROM A DATE AND RETURN THE DATE
+
+SELECT DATE_SUB('2023-12-22', INTERVAL 15 MINUTE);
