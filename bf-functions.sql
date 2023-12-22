@@ -23,6 +23,21 @@ VALUES
 ('Carla Trujillo Emparedados y helados',	'Carla Trujillo',	'Avda. de la Constitución 2222',	'México D.F.',	'05021', 'Mexico'),
 ('Zorro Moreno Taquería',	'Antonio Moreno', 'Mataderos 2312',	'México D.F.',	'05023', 'Mexico');
 
+CREATE TABLE PRODUCTS (
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+productName VARCHAR(75),
+price DECIMAL(10,2)
+);
+
+INSERT INTO products 
+(productName, price)
+VALUES
+('Lawnmower A18716', 378.55),
+('Lawnmower A18329', 415.35),
+('Lawnmower A18414', 625.50),
+('Lawnmower A18455', 565.00),
+('Lawnmower A18388', 725.95);
+
 -- RETURN THE ASCII VALUE OF THE FIRST CHARACTER IN "CUSTOMERNAME"
 
 SELECT ASCII(CustomerName) AS NumCodeOfFirstChar
