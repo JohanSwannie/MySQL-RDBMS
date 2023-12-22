@@ -160,3 +160,7 @@ SELECT TRIM('      They want to go to the zoo tomorrow        ');
   -- RETURN THE ABSOLUTE VALUE OF A NUMBER
  
  SELECT ABS(-1129.55);
+
+-- RETURN THE AVERAGE PRIVE FROM THE PRODUCTS TABLE
+
+SELECT ROUND(AVG(price), 2) as Average_Price from products;
