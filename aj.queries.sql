@@ -16,7 +16,7 @@ VALUES
 ('Mary Cooper', 'Walking', 31),
 ('Richard Swan', 'Fishing', 38),
 ('Dorothy Blake', 'Picnic', 27),
-('Wayne Brown', 'Paragliding', 40),
+('Wayne Brown', 'Paragliding', 42),
 ('Tanya Haywood', 'Walking', 22);
 
 SELECT * FROM people
