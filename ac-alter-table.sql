@@ -42,4 +42,16 @@ MODIFY color VARCHAR(20) NULL AFTER make;
 ALTER TABLE vehicles 
 CHANGE COLUMN note vehicleCondition VARCHAR(100) NOT NULL;
 
+-- Drop a column name
+
+ALTER TABLE vehicles
+DROP COLUMN vehicleCondition;
+
+-- The DESCRIBE and EXPLAIN statements are synonyms. In practice, 
+-- the DESCRIBE keyword is more often used to obtain information 
+-- about table structure, whereas EXPLAIN is used to obtain a query 
+-- execution plan (that is, an explanation of how MySQL would execute a query).
+
 DESCRIBE vehicles;
+
+EXPLAIN vehicles;
