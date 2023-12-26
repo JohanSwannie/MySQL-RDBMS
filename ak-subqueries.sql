@@ -15,7 +15,7 @@ shippedDate DATE
 INSERT INTO orders
 (orderId, customerId, customerName, productName, price, shippedDate)
 VALUES 
-(1234, 3000, 'BB 123', 'Cargo001', 2150.55, '2023-01-06'),
+(1234, 3000, 'BB 123', 'Cargo001', 2150.50, '2023-01-06'),
 (1235, 3001, 'BB 124', 'Cargo004', 4988.25, '2023-01-10'),
 (1236, 3002, 'BB 125', 'Cargo007', 575.95, '2023-01-13'),
 (1237, 3003, 'BB 126', 'Cargo002', 1299.45, '2023-01-14'),
