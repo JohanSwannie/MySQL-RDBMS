@@ -47,3 +47,31 @@ SELECT DISTINCT productName, price
 FROM orders
 WHERE price > (SELECT AVG(price) FROM orders)
 ORDER BY price DESC;
+
+CREATE TABLE products (
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+productId INT,
+productName VARCHAR(50),
+unitsInStock INT
+);
+
+INSERT INTO products
+(productId, productName, unitsInStock)
+VALUES
+(1001, 'Cargo001', 13),
+(1002, 'Cargo002', 5),
+(1003, 'Cargo003', 9),
+(1004, 'Cargo004', 2),
+(1005, 'Cargo005', 4),
+(1006, 'Cargo006', 11),
+(1007, 'Cargo007', 9),
+(1008, 'Cargo008', 8),
+(1009, 'Cargo009', 15),
+(1010, 'Cargo010', 10),
+(1011, 'Cargo011', 7),
+(1012, 'Cargo012', 16);
+
+SELECT productId, productName,
+CONCAT((unitsInStock / (SELECT SUM(unitsInStock) FROM products)) * 100, '%') AS percentage_of_total_units_in_stock
+FROM products
+ORDER BY productId;
