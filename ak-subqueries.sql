@@ -69,7 +69,7 @@ VALUES
 (1009, 'Cargo009', 15),
 (1010, 'Cargo010', 10),
 (1011, 'Cargo011', 7),
-(1012, 'Cargo012', 16);
+(1012, 'Cargo012', 15);
 
 SELECT productId, productName,
 CONCAT((unitsInStock / (SELECT SUM(unitsInStock) FROM products)) * 100, '%') AS percentage_of_total_units_in_stock
