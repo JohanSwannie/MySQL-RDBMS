@@ -115,3 +115,32 @@ CREATE TABLE Persons (
     City varchar(255),
     CONSTRAINT CHK_Person CHECK (Age>=18 AND City='Sandnes')
 );
+
+-- DEFAULT CONSTRAINT - SETS A DEFAULT VALUE FOR A COLUMN IF NO VALUE IS SPECIFIED
+
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    City varchar(255) DEFAULT 'Sandnes'
+);
+
+-- OR
+
+CREATE TABLE Orders (
+    ID int NOT NULL,
+    OrderNumber int NOT NULL,
+    OrderDate date DEFAULT GETDATE()
+);
+
+-- CREATE INDEX CONSTRAINT - USED TO CREATE AND RETRIEVE DATA FROM 
+-- THE DATABASE VERY QUICKLY
+
+CREATE INDEX idx_pname
+ON Persons (LastName, FirstName);
+
+-- OR
+
+CREATE UNIQUE INDEX idx_pname_two
+ON Persons (LastName, FirstName);
