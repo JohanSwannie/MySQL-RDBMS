@@ -12,7 +12,7 @@ age INT
 INSERT INTO people 
 (fullName, hobby, age)
 VALUES
-('James Mower', 'Gym', 34),
+('James Mower', 'Gym', 39),
 ('Mary Cooper', 'Walking', 31),
 ('Richard Swan', 'Fishing', 38),
 ('Dorothy Blake', 'Picnic', 27),
