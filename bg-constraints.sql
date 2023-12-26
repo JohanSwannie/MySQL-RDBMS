@@ -1,4 +1,4 @@
--- NOT NULL CONSTRAINT
+-- NOT NULL CONSTRAINT - ENSURES THAT A COLUMN CANNOT HAVE A NULL VALUE
 
 CREATE TABLE Persons (
     ID int NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE Persons (
     Age int
 );
 
--- UNIQUE CONSTRAINT
+-- UNIQUE CONSTRAINT - ENSURES THAT ALL VALUES IN A COLUMN ARE DIFFERENT
 
 CREATE TABLE Persons (
     ID int NOT NULL UNIQUE,
@@ -41,3 +41,66 @@ CREATE TABLE Persons (
     CONSTRAINT UC_Person UNIQUE (ID,LastName)
 );
 
+-- PRIMARY KEY CONSTRAINT -  A COMBINATION OF A NOT NULL AND UNIQUE. 
+-- UNIQUELY IDENTIFIES EACH ROW IN A TABLE
+
+CREATE TABLE Persons (
+    ID int NOT NULL PRIMARY KEY,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int
+);
+
+-- OR
+
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (ID)
+);
+
+-- OR
+
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    CONSTRAINT PK_Person PRIMARY KEY (ID,LastName)
+);
+
+-- FOREIGN KEY CONSTRAINT - PREVENTS ACTIONS THAT WOULD DESTROY LINKS BETWEEN TABLES
+
+
+CREATE TABLE Orders (
+    OrderID int NOT NULL,
+    OrderNumber int NOT NULL,
+    PersonID int,
+    PRIMARY KEY (OrderID),
+    FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+);
+
+-- OR
+
+CREATE TABLE Orders (
+    OrderID int NOT NULL,
+    OrderNumber int NOT NULL,
+    PersonID int,
+    PRIMARY KEY (OrderID),
+    CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID)
+    REFERENCES Persons(PersonID)
+);
+
+-- CHECK CONSTRAINT - ENSURES THAT THE VALUES IN A COLUMN SATISFIES 
+-- A SPECIFIC CONDITION
+
+
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    CHECK (Age>=18)
+);
