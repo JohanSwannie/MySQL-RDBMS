@@ -19,9 +19,13 @@ VALUES
 ('Wayne Brown', 'Paragliding', 42),
 ('Tanya Haywood', 'Walking', 22);
 
+-- SELECT ALL ROWS USING THE BETWEEN OPERATOR
+
 SELECT * FROM people
 WHERE age BETWEEN 22 AND 31
 ORDER BY age;
+
+-- SELECT CERTAIN ROWS USING THE IN OPERATOR
 
 SELECT fullName, hobby, age
 FROM people
