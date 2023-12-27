@@ -184,3 +184,6 @@ ON Persons (LastName, FirstName);
 
 CREATE UNIQUE INDEX idx_pname_two
 ON Persons (LastName, FirstName);
+
+ALTER TABLE table_name
+DROP INDEX index_name;
