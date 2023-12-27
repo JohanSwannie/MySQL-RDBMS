@@ -22,3 +22,8 @@ VALUES
 SELECT * FROM people
 WHERE age BETWEEN 22 AND 31
 ORDER BY age;
+
+SELECT fullName, hobby, age
+FROM people
+WHERE age IN (22, 27, 38)
+ORDER BY age;
