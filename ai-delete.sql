@@ -1,2 +1,9 @@
+-- DELETE A SINGLE ROW
+
 DELETE FROM credits
 WHERE customerNumber = 1278971;
+
+-- DELETE ALL ROWS
+
+DELETE FROM credits;
+
