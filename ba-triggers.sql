@@ -16,8 +16,6 @@ title VARCHAR(50),
 salary DECIMAL(8,2)
 );
 
-select * from employees;
-
 INSERT INTO employees
 (fullname, employeeNumber, title, salary)
 values
